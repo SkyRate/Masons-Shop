@@ -1,0 +1,192 @@
+//Обнуление
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button:-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+
+
+.wrapper {
+min-height: 100%;
+display: grid;
+grid-template: minmax(100px,auto) 1fr minmax(70px,auto) / 1fr;
+grid-template-areas:
+      "header"
+      "main"
+      "footer" ;
+}
+.header {
+   background-color: #794f45;
+   grid-area: "header";
+   padding: 15px;
+   display: grid;
+   grid-template: 1fr / 1fr minmax(auto,300px) minmax(auto,1100px) 1fr ;
+		&__logo {
+         width: 70px;
+         height: 70px;
+         border-radius: 50%;
+         background-color: #fff;
+		}
+
+		&__menu {
+
+		}
+
+&__list {
+   display: grid;
+   grid-auto-flow: column;
+   justify-items: end;
+}
+&__list li {
+
+}
+
+&__link {
+   color: #fff;
+   font-size: 18px;
+}
+
+&__burger {
+		}
+}
+.main {
+}
+.sidebar {
+
+		&__menu {
+		}
+
+		&__list {
+		}
+
+		&__link {
+		}
+}
+.content {
+
+		&__title {
+		}
+
+		&__gallery {
+		}
+
+		&__products {
+		}
+}
+.gallery {
+
+		&__title {
+		}
+
+		&__item {
+
+			&_big {
+			}
+		}
+}
+.gellery {
+
+		&__items {
+		}
+}
+.products {
+
+		&__title {
+		}
+
+		&__items {
+		}
+
+		&__item {
+		}
+
+		&__image {
+		}
+
+		&__name {
+		}
+
+		&__button {
+		}
+}
+.footer {
+   background-color: #77608d;
+		&__copy {
+		}
+}
+.text {
+}
